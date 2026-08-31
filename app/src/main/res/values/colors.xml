@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_card_background">#CC111111</color>
+    <color name="status_text_color">#FFFFFFFF</color>
+    <color name="smiling_green">#00FF00</color>
+    <color name="not_smiling_red">#FF0000</color>
+    <color name="eye_open_cyan">#00E5FF</color>
+    <color name="eye_closed_orange">#FFA500</color>
+    <color name="error_text_background">#CC000000</color>
+</resources>

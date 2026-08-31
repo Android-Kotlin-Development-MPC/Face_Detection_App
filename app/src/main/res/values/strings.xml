@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Face Detection</string>
+
+    <string name="camera_permission_rationale">The camera is required to analyze faces in real time.</string>
+    <string name="camera_start_error">Failed to start the camera</string>
+    <string name="permission_denied">Camera permission is required for face detection.</string>
+    <string name="starting_detection">Initializing face detection…</string>
+</resources>

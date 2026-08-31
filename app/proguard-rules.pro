@@ -1,0 +1,2 @@
+-keep class com.mpclab.facedetection.** { *; }
+-keepattributes Signature, *Annotation*
