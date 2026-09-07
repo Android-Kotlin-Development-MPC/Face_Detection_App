@@ -19,12 +19,19 @@ object FaceResultMapper {
             smilingProbability = face.smilingProbability,
             leftEyeOpenProbability = face.leftEyeOpenProbability,
             rightEyeOpenProbability = face.rightEyeOpenProbability,
-            leftEyePosition = face.getLandmark(FaceLandmark.LEFT_EYE)?.position
-                ?.let { PointF(it.x, it.y) },
-            rightEyePosition = face.getLandmark(FaceLandmark.RIGHT_EYE)?.position
-                ?.let { PointF(it.x, it.y) },
+            leftEyePosition = face.landmark(FaceLandmark.LEFT_EYE),
+            rightEyePosition = face.landmark(FaceLandmark.RIGHT_EYE),
+            noseBasePosition = face.landmark(FaceLandmark.NOSE_BASE),
+            mouthLeftPosition = face.landmark(FaceLandmark.MOUTH_LEFT),
+            mouthRightPosition = face.landmark(FaceLandmark.MOUTH_RIGHT),
+            mouthBottomPosition = face.landmark(FaceLandmark.MOUTH_BOTTOM),
+            leftEarPosition = face.landmark(FaceLandmark.LEFT_EAR),
+            rightEarPosition = face.landmark(FaceLandmark.RIGHT_EAR),
             headEulerAngleX = face.headEulerAngleX,
             headEulerAngleY = face.headEulerAngleY,
             headEulerAngleZ = face.headEulerAngleZ
         )
+
+    private fun Face.landmark(landmarkType: Int): PointF? =
+        getLandmark(landmarkType)?.position?.let { PointF(it.x, it.y) }
 }

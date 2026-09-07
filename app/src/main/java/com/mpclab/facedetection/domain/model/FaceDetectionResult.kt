@@ -10,6 +10,12 @@ data class FaceDetectionResult(
     val rightEyeOpenProbability: Float?,
     val leftEyePosition: PointF?,
     val rightEyePosition: PointF?,
+    val noseBasePosition: PointF?,
+    val mouthLeftPosition: PointF?,
+    val mouthRightPosition: PointF?,
+    val mouthBottomPosition: PointF?,
+    val leftEarPosition: PointF?,
+    val rightEarPosition: PointF?,
     val headEulerAngleX: Float?,
     val headEulerAngleY: Float?,
     val headEulerAngleZ: Float?
